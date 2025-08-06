@@ -11,7 +11,7 @@ df = pd.read_csv('data/proxtra_advanced_customers_data.csv', parse_dates=['last_
 # Feature engineering
 df['purchase_quarter'] = df['last_purchase_date'].dt.to_period('Q').astype(str)
 
-st.title("🔨 Home Depot Pro Xtra Customer Insights Dashboard")
+st.title("🔨 Retail Pro Xtra Customer Insights Dashboard")
 
 # Filters
 st.sidebar.header("🔍 Filter Data")
